@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viajes a la Luna — Investigación</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+    <!-- ══════════════════════════════════════
+     FONDO ESTRELLADO (generado por JS)
+══════════════════════════════════════ -->
+    <div class="stars" id="stars"></div>
+
+
+    <!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+    <header class="hero" id="hero">
+
+        <!-- Luna SVG animada -->
+        <svg class="luna-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <radialGradient id="lgLuna" cx="35%" cy="35%">
+        <stop offset="0%"   stop-color="#DEE8F0"/>
+        <stop offset="100%" stop-color="#7A8E9E"/>
+      </radialGradient>
+      <radialGradient id="lgHalo" cx="50%" cy="50%" r="50%">
+        <stop offset="0%"   stop-color="rgba(200,216,232,0.09)"/>
+        <stop offset="100%" stop-color="rgba(200,216,232,0)"/>
+      </radialGradient>
+    </defs>
+    <circle cx="100" cy="100" r="95"  fill="url(#lgHalo)"/>
+    <circle cx="100" cy="100" r="82"  fill="url(#lgLuna)"/>
+    <!-- Cráteres -->
+    <circle cx="75"  cy="82"  r="12"  fill="rgba(0,0,0,0.12)"/>
+    <circle cx="130" cy="110" r="8"   fill="rgba(0,0,0,0.10)"/>
+    <circle cx="100" cy="130" r="6"   fill="rgba(0,0,0,0.09)"/>
+    <circle cx="58"  cy="118" r="5"   fill="rgba(0,0,0,0.08)"/>
+    <circle cx="148" cy="78"  r="7"   fill="rgba(0,0,0,0.08)"/>
+    <!-- Borde suave -->
+    <circle cx="100" cy="100" r="82"  fill="none" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+  </svg>
+
+        <div class="tag">Investigación Científica</div>
+        <h1>Viajes a<br><span>la Luna</span></h1>
+        <p class="hero-sub">
+            Historia, ciencia y el futuro de la exploración lunar humana — desde los primeros pasos hasta las misiones del mañana.
+        </p>
+        <div class="meta-row">
+            <div>Autor · <span>Investigador</span></div>
+            <div>Disciplina · <span>Astronáutica</span></div>
+            <div>Año · <span>2025</span></div>
+        </div>
+
+    </header>
+
+
+    <!-- ══════════════════════════════════════
+     CONTENIDO PRINCIPAL
+══════════════════════════════════════ -->
+    <main>
+
+        <!-- ─── §01 INTRODUCCIÓN ─── -->
+        <section>
+            <div class="section-label">§ 01 — Introducción</div>
+            <h2>El sueño eterno de alcanzar la Luna</h2>
+            <p>
+                Desde que la humanidad alzó la vista al cielo nocturno, la Luna ha representado el límite entre lo conocido y lo imposible. Su superficie plateada, visible a simple vista, fue durante milenios un mito inalcanzable. Sin embargo, en el siglo XX la ciencia
+                y la voluntad humana convirtieron ese sueño en realidad.
+            </p>
+            <p>
+                Esta investigación examina los fundamentos científicos, históricos y tecnológicos de los viajes a la Luna, desde las misiones Apolo hasta los programas actuales como Artemis, analizando los desafíos físicos, biológicos y logísticos de trasladar seres
+                humanos a otro cuerpo celeste.
+            </p>
+
+            <div class="cita">
+                <blockquote>
+                    "Este es un pequeño paso para el hombre, pero un gran salto para la humanidad."
+                </blockquote>
+                <cite>— Neil Armstrong, 20 de julio de 1969</cite>
+            </div>
+        </section>
+
+
+        <!-- ─── §02 DATOS CLAVE ─── -->
+        <section>
+            <div class="section-label">§ 02 — Datos clave</div>
+            <h2>La Luna en números</h2>
+            <p>
+                Comprender la naturaleza física de nuestro satélite natural es fundamental para planificar viajes seguros y eficientes hacia su superficie.
+            </p>
+
+            <div class="datos-grid">
+                <div class="dato">
+                    <div class="dato-num">384,400</div>
+                    <div class="dato-label">Distancia media (km)</div>
+                </div>
+                <div class="dato">
+                    <div class="dato-num">3 días</div>
+                    <div class="dato-label">Duración del viaje</div>
+                </div>
+                <div class="dato">
+                    <div class="dato-num">1/6</div>
+                    <div class="dato-label">Gravedad vs Tierra</div>
+                </div>
+                <div class="dato">
+                    <div class="dato-num">-173 °C</div>
+                    <div class="dato-label">Temp. mínima nocturna</div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ─── §03 HISTORIA ─── -->
+        <section>
+            <div class="section-label">§ 03 — Historia</div>
+            <h2>Cronología de la exploración lunar</h2>
+            <p>
+                El camino hacia la Luna estuvo marcado por hitos científicos y tecnológicos que redefinieron los límites de la ingeniería humana y la voluntad política de dos superpotencias.
+            </p>
+
+            <div class="timeline">
+                <div class="evento">
+                    <div class="evento-año">1957</div>
+                    <h3>Sputnik y el inicio de la era espacial</h3>
+                    <p>La Unión Soviética lanza el primer satélite artificial, disparando la carrera espacial entre las dos superpotencias de la Guerra Fría.</p>
+                </div>
+                <div class="evento">
+                    <div class="evento-año">1961</div>
+                    <h3>Yuri Gagarin orbita la Tierra</h3>
+                    <p>El cosmonauta soviético se convierte en el primer ser humano en viajar al espacio exterior, completando una órbita completa alrededor del planeta en 108 minutos.</p>
+                </div>
+                <div class="evento">
+                    <div class="evento-año">1966</div>
+                    <h3>Luna 9 — primer alunizaje suave robótico</h3>
+                    <p>La sonda soviética Luna 9 logra el primer aterrizaje controlado sobre la superficie lunar y transmite las primeras fotografías panorámicas desde la Luna.</p>
+                </div>
+                <div class="evento">
+                    <div class="evento-año">1969</div>
+                    <h3>Apolo 11 — primer alunizaje humano</h3>
+                    <p>Neil Armstrong y Buzz Aldrin pisan la superficie lunar por primera vez mientras Michael Collins orbita en el módulo de mando. Hito histórico de la humanidad.</p>
+                </div>
+                <div class="evento">
+                    <div class="evento-año">1972</div>
+                    <h3>Apolo 17 — cierre del programa Apolo</h3>
+                    <p>El geólogo Harrison Schmitt y Eugene Cernan son los últimos humanos en caminar sobre la Luna hasta la fecha, recolectando 110 kg de muestras lunares.</p>
+                </div>
+                <div class="evento">
+                    <div class="evento-año">2019</div>
+                    <h3>Chang'e 4 — cara oculta de la Luna</h3>
+                    <p>China logra el primer alunizaje en la cara oculta de la Luna, un territorio nunca antes explorado directamente por ninguna nave espacial.</p>
+                </div>
+                <div class="evento">
+                    <div class="evento-año">2022</div>
+                    <h3>Artemis I — primer vuelo del SLS</h3>
+                    <p>La NASA lanza exitosamente su cohete Space Launch System sin tripulación, validando el sistema que llevará astronautas a la Luna por primera vez desde 1972.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider">· · ·</div>
+
+
+        <!-- ─── §04 PROGRAMA APOLO ─── -->
+        <section>
+            <div class="section-label">§ 04 — Programa Apolo</div>
+            <h2>Las misiones que cambiaron la historia</h2>
+            <p>
+                El programa Apolo de la NASA (1961–1972) fue el mayor esfuerzo tecnológico y científico coordinado de la historia. En total, seis misiones alunizaron con éxito y doce astronautas caminaron sobre la superficie lunar. Cada misión amplió el conocimiento
+                y abrió nuevas fronteras.
+            </p>
+
+            <div class="misiones-grid">
+
+                <article class="mision-card card-apolo">
+                    <div class="badge badge-apolo">NASA · 1969</div>
+                    <h3>Apolo 11</h3>
+                    <p>Primera misión tripulada en alunizar. Neil Armstrong fue el primer ser humano en pisar la Luna el 20 de julio de 1969, seguido de Buzz Aldrin. Michael Collins orbitó en el Columbia.</p>
+                    <div class="mision-meta">
+                        <span>Duelo · <strong>8 días</strong></span>
+                        <span>Muestra · <strong>21.5 kg</strong></span>
+                    </div>
+                </article>
+
+                <article class="mision-card card-apolo">
+                    <div class="badge badge-apolo">NASA · 1969</div>
+                    <h3>Apolo 12</h3>
+                    <p>Segunda misión de alunizaje, aterrizando con precisión de metros junto a la sonda Surveyor 3. Los astronautas Pete Conrad y Alan Bean realizaron dos paseos lunares.</p>
+                    <div class="mision-meta">
+                        <span>Duración · <strong>10 días</strong></span>
+                        <span>Muestra · <strong>34.4 kg</strong></span>
+                    </div>
+                </article>
+
+                <article class="mision-card card-apolo">
+                    <div class="badge badge-apolo">NASA · 1970</div>
+                    <h3>Apolo 13</h3>
+                    <p>La misión que no llegó a alunizar pero se convirtió en un símbolo de la ingeniería humana. Una explosión en el módulo de servicio obligó a usar el módulo lunar como bote salvavidas para regresar sanos a la Tierra.</p>
+                    <div class="mision-meta">
+                        <span>Estado · <strong>Abortada</strong></span>
+                        <span>Tripulantes · <strong>Rescatados</strong></span>
+                    </div>
+                </article>
+
+                <article class="mision-card card-apolo">
+                    <div class="badge badge-apolo">NASA · 1971</div>
+                    <h3>Apolo 14</h3>
+                    <p>Alan Shepard —el primer estadounidense en el espacio— alunizó en Fra Mauro. Utilizaron el carrito MET para transportar equipos y realizaron el recorrido más largo a pie hasta ese momento.</p>
+                    <div class="mision-meta">
+                        <span>Duración · <strong>9 días</strong></span>
+                        <span>Muestra · <strong>42.9 kg</strong></span>
+                    </div>
+                </article>
+
+                <article class="mision-card card-apolo">
+                    <div class="badge badge-apolo">NASA · 1971</div>
+                    <h3>Apolo 15</h3>
+                    <p>Primera misión con el rover lunar (LRV). David Scott y James Irwin exploraron las laderas del Monte Hadley, cubriendo 28 km y recolectando el famoso "Génesis Rock" de 4,000 millones de años.</p>
+                    <div class="mision-meta">
+                        <span>Duración · <strong>12 días</strong></span>
+                        <span>Muestra · <strong>77 kg</strong></span>
+                    </div>
+                </article>
+
+                <article class="mision-card card-apolo">
+                    <div class="badge badge-apolo">NASA · 1972</div>
+                    <h3>Apolo 16</h3>
+                    <p>John Young y Charles Duke exploraron las Tierras Altas Centrales, la primera misión en las tierras altas lunares. El rover recorrió 27 km y se recolectaron muestras nunca antes vistas.</p>
+                    <div class="mision-meta">
+                        <span>Duración · <strong>11 días</strong></span>
+                        <span>Muestra · <strong>95.7 kg</strong></span>
+                    </div>
+                </article>
+
+                <article class="mision-card card-apolo">
+                    <div class="badge badge-apolo">NASA · 1972</div>
+                    <h3>Apolo 17</h3>
+                    <p>La última y más larga misión Apolo. El geólogo Harrison Schmitt y Eugene Cernan pasaron más de 22 horas fuera del módulo lunar. Cernan fue el último humano en dejar sus huellas en la Luna.</p>
+                    <div class="mision-meta">
+                        <span>Duración · <strong>12.5 días</strong></span>
+                        <span>Muestra · <strong>110.5 kg</strong></span>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="cita">
+                <blockquote>
+                    "Dejamos como vinimos y, si Dios quiere, volveremos, con la paz y la esperanza de toda la humanidad."
+                </blockquote>
+                <cite>— Eugene Cernan, Apolo 17 · Diciembre 1972</cite>
+            </div>
+        </section>
+
+
+        <!-- ─── §05 PROGRAMA ARTEMIS ─── -->
+        <section>
+            <div class="section-label">§ 05 — Programa Artemis</div>
+            <h2>El regreso a la Luna — y más allá</h2>
+            <p>
+                El programa Artemis de la NASA, en colaboración con agencias internacionales y empresas privadas, tiene como objetivo establecer una presencia humana sostenible en la Luna y preparar la humanidad para el siguiente gran salto: Marte. Por primera vez en
+                la historia, una mujer y un astronauta de color pisarán la Luna.
+            </p>
+
+            <div class="misiones-grid">
+
+                <article class="mision-card card-artemis">
+                    <div class="badge badge-artemis">NASA · 2022</div>
+                    <h3>Artemis I</h3>
+                    <p>Vuelo de prueba sin tripulación del cohete SLS y la cápsula Orion. La cápsula viajó más lejos del Earth que cualquier nave diseñada para humanos, completando una órbita retrógrada de la Luna.</p>
+                    <div class="mision-meta">
+                        <span>Estado · <strong>Exitosa</strong></span>
+                        <span>Duración · <strong>25.5 días</strong></span>
+                    </div>
+                </article>
+
+                <article class="mision-card card-artemis">
+                    <div class="badge badge-artemis">NASA · 2025</div>
+                    <h3>Artemis II</h3>
+                    <p>Primera misión tripulada del programa. Cuatro astronautas realizarán un vuelo alrededor de la Luna sin aterrizar, probando todos los sistemas de soporte vital de la cápsula Orion con tripulación.</p>
+                    <div class="mision-meta">
+                        <span>Estado · <strong>Planificada</strong></span>
+                        <span>Tripulantes · <strong>4</strong></span>
+                    </div>
+                </article>
+
+                <article class="mision-card card-artemis">
+                    <div class="badge badge-artemis">NASA · 2026+</div>
+                    <h3>Artemis III</h3>
+                    <p>Primera misión de alunizaje desde Apolo 17. Dos astronautas descenderán al polo sur lunar usando el Starship HLS de SpaceX como módulo de aterrizaje. Primera mujer en la Luna.</p>
+                    <div class="mision-meta">
+                        <span>Estado · <strong>En desarrollo</strong></span>
+                        <span>Destino · <strong>Polo Sur</strong></span>
+                    </div>
+                </article>
+
+                <article class="mision-card card-artemis">
+                    <div class="badge badge-artemis">NASA/ESA · 2027+</div>
+                    <h3>Lunar Gateway</h3>
+                    <p>Estación espacial en órbita lunar que servirá de base de operaciones para misiones en la superficie. Colaboración internacional con ESA, JAXA y CSA. Permitirá estancias más largas y preparará el camino a Marte.</p>
+                    <div class="mision-meta">
+                        <span>Estado · <strong>En construcción</strong></span>
+                        <span>Órbita · <strong>NRHO lunar</strong></span>
+                    </div>
+                </article>
+
+                <article class="mision-card card-artemis">
+                    <div class="badge badge-artemis">NASA/SpaceX · 2026+</div>
+                    <h3>Starship HLS</h3>
+                    <p>El vehículo de aterrizaje lunar seleccionado por la NASA para Artemis III y IV. La variante lunar del Starship de SpaceX es el sistema más grande jamás diseñado para posarse en otro cuerpo celeste.</p>
+                    <div class="mision-meta">
+                        <span>Altura · <strong>50 m</strong></span>
+                        <span>Carga útil · <strong>100 t</strong></span>
+                    </div>
+                </article>
+
+                <article class="mision-card card-artemis">
+                    <div class="badge badge-artemis">Visión · 2030s</div>
+                    <h3>Base lunar permanente</h3>
+                    <p>El objetivo a largo plazo es establecer una base en el polo sur lunar, donde hay evidencia de hielo de agua. Esto permitirá producir combustible in situ y sostener presencia humana continua.</p>
+                    <div class="mision-meta">
+                        <span>Ubicación · <strong>Polo Sur</strong></span>
+                        <span>Recurso · <strong>Hielo H₂O</strong></span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- ─── §06 OTRAS MISIONES ─── -->
+        <section>
+            <div class="section-label">§ 06 — Misiones internacionales</div>
+            <h2>La nueva carrera lunar global</h2>
+            <p>
+                El siglo XXI ha renovado el interés en la exploración lunar, con múltiples agencias espaciales y empresas privadas desarrollando sus propias misiones, convirtiendo la Luna en un objetivo geopolítico y científico de primer orden.
+            </p>
+
+            <div class="misiones-grid">
+                <article class="mision-card">
+                    <div class="badge badge-success">China · CNSA</div>
+                    <h3>Chang'e 6 y 7</h3>
+                    <p>Chang'e 6 trajo muestras de la cara oculta de la Luna. Chang'e 7 buscará agua helada en el polo sur. China planea una base lunar conjunta con Rusia para 2035.</p>
+                </article>
+                <article class="mision-card">
+                    <div class="badge badge-warn">Japón · JAXA</div>
+                    <h3>SLIM y LUNAR-A</h3>
+                    <p>SLIM logró el alunizaje más preciso de la historia, a metros del objetivo. Japón participa también en el Gateway como socio estratégico de la NASA.</p>
+                </article>
+                <article class="mision-card">
+                    <div class="badge badge-info">Privado · SpaceX/Blue</div>
+                    <h3>Sector privado</h3>
+                    <p>Empresas como SpaceX, Blue Origin, Astrobotic e ispace están desarrollando landers comerciales, revolucionando el acceso y reduciendo los costos de exploración lunar.</p>
+                </article>
+            </div>
+        </section>
+
+        <div class="divider">· · ·</div>
+
+
+        <!-- ─── §07 DESAFÍOS ─── -->
+        <section>
+            <div class="section-label">§ 07 — Desafíos científicos</div>
+            <h2>Obstáculos de la exploración humana</h2>
+            <p>
+                Llevar seres humanos a la Luna e instalar bases permanentes implica superar barreras formidables en múltiples disciplinas de la ciencia y la ingeniería.
+            </p>
+            <p>
+                <span class="desafio-titulo">Radiación cósmica:</span> Sin magnetosfera protectora, los astronautas se exponen a niveles de radiación hasta 200 veces superiores a los terrestres, incrementando el riesgo de cáncer y daño genético acumulativo.
+            </p>
+            <p>
+                <span class="desafio-titulo">Polvo lunar (regolito):</span> Las partículas ultrafinas y abrasivas del suelo lunar se adhieren a trajes y equipos, obstruyendo mecanismos y representando un serio peligro respiratorio si penetran en los módulos
+                habitables.
+            </p>
+            <p>
+                <span class="desafio-titulo">Temperaturas extremas:</span> La ausencia de atmósfera produce oscilaciones térmicas de hasta 300 °C entre el día y la noche lunar — un ciclo de 29.5 días terrestres que pone a prueba materiales y sistemas
+                de soporte vital.
+            </p>
+            <p>
+                <span class="desafio-titulo">Efectos fisiológicos:</span> La gravedad de 1/6 genera pérdida de masa muscular y ósea, alteraciones en la visión por presión intracraneal aumentada y trastornos en el sistema cardiovascular durante estancias
+                prolongadas.
+            </p>
+            <p>
+                <span class="desafio-titulo">Comunicaciones y autonomía:</span> Un retraso de 1.3 segundos en las comunicaciones con la Tierra obliga a desarrollar sistemas autónomos avanzados y protocolos de emergencia totalmente independientes para
+                las tripulaciones.
+            </p>
+        </section>
+
+
+        <!-- ─── §08 CONCLUSIONES ─── -->
+        <section>
+            <div class="section-label">§ 08 — Conclusiones</div>
+            <h2>Un nuevo capítulo comienza</h2>
+            <p>
+                La exploración lunar no es solo un logro tecnológico: es la manifestación más tangible de la curiosidad humana y su impulso de trascender los límites físicos. Más de cincuenta años después del primer alunizaje, la Luna vuelve a estar en el centro de la
+                agenda espacial global, esta vez con mayor ambición y más actores que nunca.
+            </p>
+            <p>
+                Los avances en propulsión, materiales, biotecnología y sistemas autónomos hacen que el regreso humano a la Luna —y eventualmente la colonización permanente— sea más factible que nunca. La presencia de hielo de agua en el polo sur abre la posibilidad de
+                producir combustible y oxígeno in situ, reduciendo drásticamente el costo de futuras misiones.
+            </p>
+            <p>
+                La Luna representa, además, la puerta de entrada a Marte y al resto del sistema solar. Esta investigación concluye que la exploración lunar sostenida, tanto robótica como humana, es una prioridad científica y estratégica de primer orden para la humanidad
+                en el siglo XXI y en las décadas venideras.
+            </p>
+        </section>
+
+    </main>
+
+
+    <!-- ══════════════════════════════════════
+     NAVEGACIÓN DIRECCIONAL
+══════════════════════════════════════ -->
+    <nav class="nav-dir" id="navDir" aria-label="Navegación por secciones">
+
+        <!-- Tooltip -->
+        <span class="nav-tooltip" id="navTooltip" aria-live="polite">Inicio</span>
+
+        <!-- Botón ARRIBA -->
+        <button class="nav-btn" id="btnArriba" title="Sección anterior" aria-label="Sección anterior" disabled>
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+        <!-- Puntos indicadores -->
+        <div class="nav-puntos" id="navPuntos" role="list" aria-label="Secciones"></div>
+
+        <!-- Botón ABAJO -->
+        <button class="nav-btn" id="btnAbajo" title="Siguiente sección" aria-label="Siguiente sección">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <polyline points="6 9 12 15 18 9"/>
+    </svg>
+  </button>
+
+        <!-- Botón HOME -->
+        <button class="nav-home" id="btnHome" title="Ir al inicio" aria-label="Ir al inicio">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9.5z"/>
+      <polyline points="9 21 9 12 15 12 15 21"/>
+    </svg>
+  </button>
+
+    </nav>
+
+
+    <!-- ══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
+    <footer>
+        <!-- Botón Siguiente colocado arriba del texto de derechos -->
+        <button class="btn-nav" onclick="window.location.href='../GaleriaDeImagenes-main1/pagina1.html'" style="margin-bottom: 10px;">Siguiente ➡️</button>
+
+        <p>
+            Investigación sobre Viajes a la Luna &nbsp;·&nbsp; Todos los derechos reservados
+        </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

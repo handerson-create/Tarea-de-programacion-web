@@ -1,0 +1,182 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+/* BODY */
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    /* tamaño base más legible */
+    line-height: 1.5;
+    background: linear-gradient(to bottom, #0b0c2e, #1a1a40, #2c2c5a);
+    /* degradado espacial */
+    color: white;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* HEADER */
+
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: linear-gradient(90deg, #020617, #0f172a);
+    border-bottom: 2px solid #38bdf8;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #38bdf8;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+header h1:hover {
+    color: #22d3ee;
+    transform: scale(1.05);
+    text-shadow: 0 0 10px #38bdf8, 0 0 20px #38bdf8, 0 0 40px #0ea5e9;
+}
+
+header h1::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background: #38bdf8;
+    transition: 0.4s;
+    transform: translateX(-50%);
+}
+
+
+/* GALERIA */
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+
+/* TARJETA */
+
+.tarjeta {
+    background: #1e293b;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+
+/* EFECTO BRILLO */
+
+.tarjeta::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: 0.5s;
+}
+
+.tarjeta:hover::before {
+    left: 100%;
+}
+
+
+/* IMAGEN */
+
+.tarjeta img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+
+/* DESCRIPCION */
+
+.descripcion {
+    padding: 15px;
+}
+
+.descripcion h3 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+    font-size: 18px;
+    /* títulos un poco más grandes que párrafos */
+}
+
+.descripcion p {
+    font-size: 14px;
+    /* texto más cómodo de leer */
+    color: #cbd5f5;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #1a1a40;
+}
+
+
+/* BOTONES */
+
+button {
+    background-color: #4b6cb7;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #ffdd57;
+    color: #0b0c3e;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ffdd57;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
